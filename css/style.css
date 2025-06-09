@@ -8,13 +8,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #003a5f;
-    padding: 10px 20px;
-    display: flex;
-    gap: 10px;
-}
 
 .nav-item {
     position: relative;
@@ -59,13 +52,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     background-color: #003a5f;
     color: white;
-    margin-top: 5px;
-    padding: 30px;
-    width: 100%;
+    margin: 20px auto 10px auto;
+    padding: 40px 20px;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    height: 200px;
+
+    /*gap: 10px;*/
+    /*border-radius: 8px;*/
+
 }
 
 /* Container para manter "ORDEM" e número lado a lado */
@@ -74,14 +74,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px; /* Espaçamento entre ORDEM e número */
+    
 }
 
-.senhaAtualTexto, #senhaAtualNumero {
+.senhaAtualTexto{
     font-size: 30pt;
-    font-weight: 800;
-    white-space: nowrap; /* Evita quebra de linha */
+    font-weight: 400;
+    /* white-space: nowrap; /* Evita quebra de linha */
     margin-top: 40px;
-    margin-bottom: -25px;
+    margin-bottom: 9;
+}
+
+.senhaAtualNumero{
+    font-size: 700pt;
+    font-weight: 900;
+    margin: 0;
+
 }
 
 .nome {
@@ -101,14 +109,16 @@ body {
     font-weight: 800;
     text-align: center;
     background-color: #003a5f;
-    height: 130px;
+    padding: 100px 20px;
+    width: 400px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 
 #ultimaSenhaTexto {
     font-size: 20px;
     color: white;
+    text-align: center;
 }
 
 #ultimaSenhaNumero {
@@ -131,7 +141,7 @@ body {
 }
 
 .subtitulo {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
 }
 
