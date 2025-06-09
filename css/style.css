@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003a5f;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 100px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* Estilos adicionais */
+.barraSuperior {
+    height: 200px;
+    margin-top: 10px;
+}
+
+.senhaAtual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #003a5f;
+    color: white;
+    margin-top: 5px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Container para manter "ORDEM" e número lado a lado */
+.senhaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre ORDEM e número */
+}
+
+.senhaAtualTexto, #senhaAtualNumero {
+    font-size: 30pt;
+    font-weight: 800;
+    white-space: nowrap; /* Evita quebra de linha */
+    margin-top: 40px;
+    margin-bottom: -25px;
+}
+
+.nome {
+    font-size: clamp(30px, 4vw, 100pt); /* Ajuste dinâmico: mínimo de 30px, ideal de 4vw, máximo de 100pt */
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.ultimaSenha {
+    font-weight: 800;
+    text-align: center;
+    background-color: #003a5f;
+    height: 130px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#ultimaSenhaTexto {
+    font-size: 20px;
+    color: white;
+}
+
+#ultimaSenhaNumero {
+    font-size: 40px;
+    color: white;
+}
+
+.PJFLogo {
+    max-width: 150px;
+}
+
+.sisuLogo {
+    max-width: 400px;
+}
+
+.PJFTexto {
+    font-size: 27pt;
+    font-weight: 800;
+    color: #003a5f;
+}
+
+.subtitulo {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+audio {
+    display: none;
+}
+
+.inputEscondido {
+    display: none;
+    width: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid #a50;
+    background: white;
+    color: black;
+}
